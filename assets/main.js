@@ -1,8 +1,9 @@
 // Shared site behavior
 document.addEventListener('DOMContentLoaded', function(){
   var header = document.querySelector('header.site');
+  var forceSolid = header && header.classList.contains('solid');
   function onScroll(){
-    if(!header) return;
+    if(!header || forceSolid) return;
     if(window.scrollY > 40){ header.classList.add('solid'); } else { header.classList.remove('solid'); }
   }
   window.addEventListener('scroll', onScroll);
