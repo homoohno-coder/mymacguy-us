@@ -214,3 +214,9 @@ footer a:hover{color:#fff}
 .legal h2{font-size:1.3rem;margin:34px 0 12px;color:var(--navy)}
 .legal p,.legal li{color:var(--slate);font-size:.98rem;margin-bottom:14px}
 .legal ul{padding-left:22px}
+
+/* Brand verification and accessibility */
+.mark::before{content:"W"}
+.business-identity{margin-bottom:18px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--bg);color:var(--slate);font-size:.94rem;line-height:1.7}
+.brand-disclaimer{flex-basis:100%;font-size:.78rem;line-height:1.55;color:rgba(255,255,255,.52)}
+.brand-disclaimer a{font-size:inherit;color:rgba(255,255,255,.72);text-decoration:underline}
